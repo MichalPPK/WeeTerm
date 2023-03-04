@@ -1,0 +1,44 @@
+{
+  "readmeUrl": "https://github.com/MichalPPK/Michal/blob/main/README.md",
+  "title": "Michal Klimas",
+  "name": "Michal Klimas",
+  "ascii": "michal",
+  "social": {
+    "github": "MichalPPK",
+    "linkedin": "michal-pp-klimas"
+  },
+  "email": "michal@michalklimas.com",
+  "ps1_hostname": "michalklimas.com",
+  "ps1_username": "guest",
+  "repo": "https://github.com/MichalPPK/",
+  "patreonurl": "https://patreon.com/Michalek",
+  "btcad": "BTC : bc1qqqzzhfymcvfjenj40grpfem3yct5mgqf035329",
+  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "theme": "default",
+  "donate_urls": {
+    "paypal": "BTC:bc1qqqzzhfymcvfjenj40grpfem3yct5mgqf035329",
+    "patreon": "https://patreon.com/Michalek"
+  },
+  "colors": {
+    "light": {
+      "background": "#0d1926",
+      "foreground": "#b4e1fd",
+      "yellow": "#ff8308",
+      "green": "#83ff08",
+      "gray": "#f28000",
+      "blue": "#0883ff",
+      "cyan": "#08ff83",
+      "red": "#ff0883"
+    },
+    "dark": {
+      "background": "#0d1926",
+      "foreground": "#b4e1fd",
+      "yellow": "#ff8308",
+      "green": "#83ff08",
+      "gray": "#f28000",
+      "blue": "#0883ff",
+      "cyan": "#08ff83",
+      "red": "#ff0883"
+    }
+  }
+}

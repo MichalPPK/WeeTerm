@@ -6,9 +6,9 @@ services:
       dockerfile: Dockerfile
       target: base
     expose:
-      - '3000'
+      - '3100'
     ports:
-      - '3000:3000'
+      - '3100:3000'
     volumes:
       - ./src/:/home/node/app/src
     command: npm run dev

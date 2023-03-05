@@ -4,7 +4,7 @@ export const figlet = async (args?: string[]): Promise<string> => {
   let output = '';
 
   if (args.length < 1 || args[0] === '') {
-    return fig('Error');
+    return 'Usage: figlet text';
   } else {
     output = args.join(' ');
     return fig(output);

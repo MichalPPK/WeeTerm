@@ -8,12 +8,11 @@ export const figlet = async (args?: string[]): Promise<string> => {
     return 'Usage: figlet [phrase]. Example: figlet Hello World';
   }
   else {
-    return fig(output, function(err, data) {
+    return fig.text(output, function(err, data) {
     if (err) {
         return ('Something went wrong...');
     }
-    else {
-    return (data)}
+    return (data)
 });
   }
 };

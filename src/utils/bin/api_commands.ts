@@ -23,7 +23,7 @@ export const quote = async (args: string[]): Promise<string> => {
 
 export const fortune = async (args: string[]): Promise<string> => {
   const data = await getFortune();
-  return data.fortune;
+  return data;
 };
 
 export const readme = async (args: string[]): Promise<string> => {

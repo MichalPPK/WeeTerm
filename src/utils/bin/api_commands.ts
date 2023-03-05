@@ -44,7 +44,7 @@ export const weather = async (args: string[]): Promise<string> => {
 
 export const figgy = async (args: string[]): Promise<string> => {
   const phrase = args.join('+');
-  if (!city) {
+  if (!phrase) {
     return 'Usage: figgy [phrase]. Example: figgy Hello World';
   }
   const figgy = await getFiglet(phrase);

@@ -12,7 +12,8 @@ export const figlet = async (args?: string[]): Promise<string> => {
     if (err) {
         return ('Something went wrong...');
     }
-    return (data)
+    else {
+    return (data)}
 });
   }
 };

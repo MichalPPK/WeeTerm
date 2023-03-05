@@ -1,15 +1,12 @@
-import * as figlet from 'figlet';
+import * as fig from 'figlet';
 
-class FigletTest() {
+export const figlet = async (args?: string[]): Promise<string> => {
+  let output = '';
 
-    testFiglet(testData: string) => {
-        figlet(testData, (error: any, data: any) => {
-            if (error) {
-                return process.exit(1);
-            }
-            console.log(chalk.blue(data));
-            console.log('');
-            process.exit(0);
-        });
-    }
-}
+  if (args.length < 1 || args[0] === '') {
+    return 'Usage: figlet text';
+  } else {
+    output = args.join(' ');
+    return fig({ text: output });
+  }
+};

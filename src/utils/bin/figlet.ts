@@ -14,7 +14,7 @@ export const figlet = async (args?: string[]): Promise<string> => {
         console.dir(err);
         return;
     }
-    return(data)
+    return (data)
 });
   }
 };

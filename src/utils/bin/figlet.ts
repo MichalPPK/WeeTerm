@@ -4,9 +4,9 @@ export const figlet = async (args?: string[]): Promise<string> => {
   let output = '';
 
   if (args.length < 1 || args[0] === '') {
-    console.log('Usage: figlet text');
+    return 'Usage: figlet text';
   } else {
     output = args.join(' ');
-    return fig.text(output);
+    return fig.textSync(output);
   }
 };

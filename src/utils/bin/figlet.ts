@@ -11,8 +11,6 @@ export const figlet = async (args?: string[]): Promise<string> => {
     return fig(output, function(err, data) {
     if (err) {
         return ('Something went wrong...');
-        console.dir(err);
-        return;
     }
     return (data)
 });

@@ -22,6 +22,11 @@ export const getWeather = async (city: string) => {
   }
 };
 
+export const getFortune = async () => {
+  const { data } = await axios.get('https://helloacm.com/api/fortune/');
+  return data;
+};
+
 export const getQuote = async () => {
   const { data } = await axios.get('https://api.quotable.io/random');
   return {

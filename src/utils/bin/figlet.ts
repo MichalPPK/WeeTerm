@@ -11,6 +11,6 @@ export const figlet = async (args?: string[]): Promise<string> => {
     return fig(output, {
     font: 'Standard',
 }, function(err, data) {
-    return (data););
+    return (data);
   }
 };

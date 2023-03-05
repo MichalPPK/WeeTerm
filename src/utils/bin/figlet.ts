@@ -9,4 +9,5 @@ export const figlet = async (args?: string[]): Promise<string> => {
   }
   else {
     return fig(output);
+  }
 };

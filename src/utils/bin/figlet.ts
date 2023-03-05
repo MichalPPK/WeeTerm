@@ -12,5 +12,5 @@ export const figlet = async (args?: string[]): Promise<string> => {
     font: 'Standard',
 }, function(err, data) {
     return (data);
-  }
+  });
 };

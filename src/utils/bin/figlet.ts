@@ -2,12 +2,12 @@ import * as fig from 'figlet';
 import standard from 'figlet/importable-fonts/Standard.js'
 
 export const figlet = async (args?: string[]): Promise<string> => {
-  let output = '';
+  let output = args.join('+');
 
-  if (args.length < 1 || args[0] === '') {
-    return 'Usage: figlet text';
-  } else {
-    output = args.join(' ');
+  if (!output) {
+    return 'Usage: figlet [phrase]. Example: figlet Hello World';
+  }
+  else {
     return fig(output);
   }
 };

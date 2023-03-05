@@ -27,6 +27,15 @@ export const getFortune = async () => {
   return data;
 };
 
+export const getFiglet = async (phrase: string) => {
+  try {
+    const { data } = await axios.get(`https://uploadbeta.com/api/figlet/?cached&msg=${phrase}`);
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
 export const getQuote = async () => {
   const { data } = await axios.get('https://api.quotable.io/random');
   return {

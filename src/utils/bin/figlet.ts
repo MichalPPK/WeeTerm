@@ -7,6 +7,6 @@ export const figlet = async (args?: string[]): Promise<string> => {
     return 'Usage: figlet text';
   } else {
     output = args.join(' ');
-    return fig({ text: output });
+    return fig.text({ text: output });
   }
 };

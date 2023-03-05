@@ -8,9 +8,5 @@ export const figlet = async (args?: string[]): Promise<string> => {
     return 'Usage: figlet [phrase]. Example: figlet Hello World';
   }
   else {
-    return fig(output, {
-    font: 'Standard',
-}, function(err, data) {
-    return (data);
-  });
+    return fig(output);
 };

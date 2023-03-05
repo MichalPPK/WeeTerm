@@ -10,11 +10,11 @@ export const figlet = async (args?: string[]): Promise<string> => {
   else {
     return fig(output, function(err, data) {
     if (err) {
-        console.log('Something went wrong...');
+        return ('Something went wrong...');
         console.dir(err);
         return;
     }
-    console.log(data)
+    return(data)
 });
   }
 };

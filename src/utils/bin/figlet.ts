@@ -1,8 +1,6 @@
 import * as fig from 'figlet';
 import standard from 'figlet/importable-fonts/Standard.js'
 
-fig.parseFont('Standard', standard);
-
 export const figlet = async (args?: string[]): Promise<string> => {
   let output = '';
 

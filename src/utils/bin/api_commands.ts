@@ -5,6 +5,7 @@ import { getQuote } from '../api';
 import { getReadme } from '../api';
 import { getWeather } from '../api';
 import { getFortune } from '../api';
+import { getFiglet } from '../api';
 
 export const projects = async (args: string[]): Promise<string> => {
   const projects = await getProjects();
@@ -39,4 +40,13 @@ export const weather = async (args: string[]): Promise<string> => {
   }
   const weather = await getWeather(city);
   return weather;
+};
+
+export const figgy = async (args: string[]): Promise<string> => {
+  const phrase = args.join('+');
+  if (!city) {
+    return 'Usage: figgy [phrase]. Example: figgy Hello World';
+  }
+  const figgy = await getFiglet(phrase);
+  return figgy;
 };

@@ -1,7 +1,7 @@
 #!/bin/sh
-# This script installs LiveTerm.
+# This script installs WeeTerm.
 #
-# Found a bug? Report it here: https://github.com/MichalPPK/LiveTerm/issues
+# Found a bug? Report it here: https://github.com/MichalPPK/WeeTerm/issues
 
 set -e -u
 

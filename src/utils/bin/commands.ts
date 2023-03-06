@@ -14,11 +14,11 @@ export const help = async (args: string[]): Promise<string> => {
       c += Object.keys(bin).sort()[i - 1] + ' ';
     }
   }
-  return `Cześć! Here are the available commands:
+  return `Cześć! Here are some of the available commands:
 \n${c}\n
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
+Type 'sumfetch' or 'neofetch' to display summary.
 `;
 };
 
@@ -39,7 +39,7 @@ export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
 Take a look around and help out if you can!
 More about me:
-'sumfetch' - short summary.
+'sumfetch' or 'neofetch' - short summary.
 'resume' - my latest resume.
 'readme' - my readme.`;
 };
@@ -51,8 +51,8 @@ export const resume = async (args: string[]): Promise<string> => {
 
 // Donate
 export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my development:
+  return `I'm sure you're just looking, but consider a small donation towards my school and learning fund. 
+Here are some of the ways you can support my development:
 - <u>BTC : bc1qqqzzhfymcvfjenj40grpfem3yct5mgqf035329</u>
 - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
 `;
@@ -67,13 +67,13 @@ export const email = async (args: string[]): Promise<string> => {
 export const github = async (args: string[]): Promise<string> => {
   window.open(`https://github.com/${config.social.github}/`);
 
-  return 'Opening github...';
+  return 'Opening Github...';
 };
 
 export const linkedin = async (args: string[]): Promise<string> => {
   window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
 
-  return 'Opening linkedin...';
+  return 'Opening Linkedin...';
 };
 
 // Search
@@ -84,12 +84,12 @@ export const google = async (args: string[]): Promise<string> => {
 
 export const duckduckgo = async (args: string[]): Promise<string> => {
   window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
-  return `Searching duckduckgo for ${args.join(' ')}...`;
+  return `Respect our privacy. Searching duckduckgo for ${args.join(' ')}...`;
 };
 
 export const bing = async (args: string[]): Promise<string> => {
   window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
+  return `Searching bing for ${args.join(' ')}?`;
 };
 
 export const reddit = async (args: string[]): Promise<string> => {
@@ -107,20 +107,22 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `a
-bunch
-of
-fake
-directories`;
+  return `bin  boot  dev	etc  home  lib	lib32  lib64  libx32  lost+found  media
+mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var`;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+  return `ERROR: DIRECTORY ACCESS RESTRICTED
+Directories don't come cheap.
+Consider supporting me for access. - type 'donate' to learn more.`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
+};
+
+export const time = async (args: string[]): Promise<string> => {
+  return new Date.getTime().toString();
 };
 
 export const vi = async (args: string[]): Promise<string> => {

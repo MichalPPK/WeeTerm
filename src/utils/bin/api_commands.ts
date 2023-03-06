@@ -56,7 +56,7 @@ export const number = async (args: string[]): Promise<string> => {
 export const datehis = async (args: string[]): Promise<string> => {
   let datehistory = args.join('');
   if (!datehistory) {
-    return 'Get random trivia about a date.\nUsage: datehis [MONTH/DAY]. Example: datehis 8/22';
+    return 'Get random trivia about a date.\nUsage: datehis [MONTH/DAY]. Ex: datehis 8/22\nOR\nUsage: datehis [DAYOFYEAR]. Ex: datehis 235';
   }
   const datehis = await getDatehistory(datehistory);
   return datehis;

@@ -55,13 +55,13 @@ export const number = async (args: string[]): Promise<string> => {
 };
 
 export const datehis = async (args: string[]): Promise<string> => {
-  const datehistory = args.join(' ');
-  if (!datehistory) {
+  const datehist = args.join(' ');
+  if (!datehist) {
     return 'Get random trivia about a date.';
     return 'Usage: datehis [MONTH/DAY]. Example: datehis 8/22';
   }
-  const datehistory = await getWeather(datehistory);
-  return datehistory;
+  const datehis = await getWeather(datehist);
+  return datehis;
 };
 
 export const figgy = async (args: string[]): Promise<string> => {

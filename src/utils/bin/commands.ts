@@ -122,7 +122,7 @@ export const date = async (args: string[]): Promise<string> => {
 };
 
 export const time = async (args: string[]): Promise<string> => {
-  return new Date().getTime();
+  return new Date().toString();
 };
 
 export const vi = async (args: string[]): Promise<string> => {

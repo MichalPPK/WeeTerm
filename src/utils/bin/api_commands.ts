@@ -47,8 +47,8 @@ export const weather = async (args: string[]): Promise<string> => {
 export const number = async (args: string[]): Promise<string> => {
   const number = args.join(' ');
   if (!number) {
-    return 'Get random trivia about a number.
-    Usage: number [numerical value]. Example: number 13';
+    return 'Get random trivia about a number.';
+    return 'Usage: number [numerical value]. Example: number 13';
   }
   const number = await getNumber(number);
   return number;
@@ -57,8 +57,8 @@ export const number = async (args: string[]): Promise<string> => {
 export const datehis = async (args: string[]): Promise<string> => {
   const datehistory = args.join(' ');
   if (!datehistory) {
-    return 'Get random trivia about a date.
-    Usage: datehis [MONTH/DAY]. Example: datehis 8/22';
+    return 'Get random trivia about a date.';
+    return 'Usage: datehis [MONTH/DAY]. Example: datehis 8/22';
   }
   const datehistory = await getWeather(datehistory);
   return datehistory;

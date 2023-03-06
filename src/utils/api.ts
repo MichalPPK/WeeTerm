@@ -48,9 +48,9 @@ export const getNumber = async (number: string) => {
 export const getDatehistory = async (datehistory: string) => {
   try {
     const { data } = await axios.get(`http://numbersapi.com/${datehistory}/date`);
-    return data;
-  } catch (error) {
     return datehistory;
+  } catch (error) {
+    return error;
   }
 };
 

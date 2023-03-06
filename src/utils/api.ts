@@ -50,7 +50,7 @@ export const getDatehistory = async (datehistory: string) => {
     const { data } = await axios.get(`http://numbersapi.com/${datehistory}/date`);
     return data;
   } catch (error) {
-    return error;
+    return datehistory;
   }
 };
 

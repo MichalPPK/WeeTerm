@@ -45,12 +45,12 @@ export const weather = async (args: string[]): Promise<string> => {
 };
 
 export const number = async (args: string[]): Promise<string> => {
-  const number = args.join(' ');
-  if (!number) {
+  const numb = args.join(' ');
+  if (!numb) {
     return 'Get random trivia about a number.';
     return 'Usage: number [numerical value]. Example: number 13';
   }
-  const number = await getNumber(number);
+  const number = await getNumber(numb);
   return number;
 };
 

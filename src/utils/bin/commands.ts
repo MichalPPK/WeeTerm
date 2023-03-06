@@ -160,7 +160,7 @@ export const banner = (args?: string[]): string => {
 ###       ### ########### ########  ###    ### ###     ### ########## ### ###    ###         
               
      ███
-    ██░    Welcome to my first site, which is always in development just like me.
+    ██░    Welcome to my first site, which is always in development (just like me).
    ██     Here you can learn about me and perhaps support me while I learn new and exciting things.
  ███    I hope you enjoy your stay and have fun exploring. For feature additions or anything please contact me.
 ░░░██       Type 'help' to see the list of available commands.

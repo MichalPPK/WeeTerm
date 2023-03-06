@@ -36,6 +36,24 @@ export const getFiglet = async (phrase: string) => {
   }
 };
 
+export const getNumber = async (number: string) => {
+  try {
+    const { data } = await axios.get(`http://numbersapi.com/${number}`);
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
+export const getDatehistory = async (datehistory: string) => {
+  try {
+    const { data } = await axios.get(`http://numbersapi.com/${datehistory}/date`);
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
 export const getQuote = async () => {
   const { data } = await axios.get('https://api.quotable.io/random');
   return {

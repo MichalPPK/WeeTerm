@@ -125,6 +125,8 @@ export const time = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
+// Taking it out for now.
+/*
 export const vi = async (args: string[]): Promise<string> => {
   return `woah, you still use 'vi'? just try 'vim'.`;
 };
@@ -140,10 +142,10 @@ export const nvim = async (args: string[]): Promise<string> => {
 export const emacs = async (args?: string[]): Promise<string> => {
   return `you know what? just use vscode.`;
 };
-
+*/
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-  return `Permission denied: with little power comes... no responsibility? `;
+  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // Always a classic
+  return `Permission denied: consider donating - type 'donate' to learn more. `;
 };
 
 // Banner
@@ -157,10 +159,14 @@ export const banner = (args?: string[]): string => {
 #+#       #+#     #+#    #+#    #+# #+#    #+# #+#     #+# #+#        #+# #+#   #+#  
 ###       ### ########### ########  ###    ### ###     ### ########## ### ###    ###         
               
-Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
-Type 'patreon' to visit the Patreon page that's been set up for me.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
+     ███
+    ██░    Welcome to my first site, which is always in development just like me.
+   ██     Here you can learn about me and perhaps support me while I learn new and exciting things.
+ ███    I hope you enjoy your stay and have fun exploring. For feature additions or anything please contact me.
+░░░██       Type 'help' to see the list of available commands.
+  ░░██      Type 'donate' to see the ways you can help.
+   ░░███
+    ░░░ 
 `;
 };
 

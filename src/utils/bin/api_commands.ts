@@ -47,18 +47,16 @@ export const weather = async (args: string[]): Promise<string> => {
 export const number = async (args: string[]): Promise<string> => {
   const numb = args.join(' ');
   if (!numb) {
-    return 'Get random trivia about a number.';
-    return 'Usage: number [numerical value]. Example: number 13';
+    return 'Get random trivia about a number.\n Usage: number [numerical value]. Example: number 13';
   }
   const number = await getNumber(numb);
   return number;
 };
 
 export const datehis = async (args: string[]): Promise<string> => {
-  const datehist = args.join(' ');
+  const datehist = args.join('');
   if (!datehist) {
-    return 'Get random trivia about a date.';
-    return 'Usage: datehis [MONTH/DAY]. Example: datehis 8/22';
+    return 'Get random trivia about a date.\n Usage: datehis [MONTH/DAY]. Example: datehis 8/22';
   }
   const datehis = await getWeather(datehist);
   return datehis;

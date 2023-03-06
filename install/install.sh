@@ -5,11 +5,11 @@
 
 set -e -u
 
-eval "git clone 'https://github.com/MichalPPK/LiveTerm.git'"
+eval "git clone 'https://github.com/MichalPPK/WeeTerm.git'"
 
 cd LiveTerm
 
-echo "LiveTerm cloned! Installing dependencies..."
+echo "WeeTerm cloned! Installing dependencies..."
 
 if command -v yarn >/dev/null 2>&1 ; then
   yarn install
@@ -34,22 +34,22 @@ fi
 cat <<-'EOM'
 
 
- █████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
-                                                                                
+ █████   ███   █████                   ███████████                                   
+░░███   ░███  ░░███                   ░█░░░███░░░█                                   
+ ░███   ░███   ░███   ██████   ██████ ░   ░███  ░   ██████  ████████  █████████████  
+ ░███   ░███   ░███  ███░░███ ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
+ ░░███  █████  ███  ░███████ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
+  ░░░█████░█████░   ░███░░░  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
+    ░░███ ░░███     ░░██████ ░░██████     █████   ░░██████  █████     █████░███ █████
+     ░░░   ░░░       ░░░░░░   ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+                                                                                     
 
-LiveTerm has been downloaded to the current directory.
+WeeTerm has been downloaded to the current directory.
 You can start developing it with:
 
-cd LiveTerm && yarn dev
+cd WeeTerm && yarn dev
 
-This will open a local port at http://localhost:3000, 
+This will open a local port at http://localhost:3100, 
 where you can preview your website. To apply changes, edit:
 
 config.json

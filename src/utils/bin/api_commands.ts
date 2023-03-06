@@ -6,6 +6,8 @@ import { getReadme } from '../api';
 import { getWeather } from '../api';
 import { getFortune } from '../api';
 import { getFiglet } from '../api';
+import { getNumber } from '../api';
+import { getDatehistory } from '../api';
 
 export const projects = async (args: string[]): Promise<string> => {
   const projects = await getProjects();
@@ -40,6 +42,26 @@ export const weather = async (args: string[]): Promise<string> => {
   }
   const weather = await getWeather(city);
   return weather;
+};
+
+export const number = async (args: string[]): Promise<string> => {
+  const number = args.join(' ');
+  if (!number) {
+    return 'Get random trivia about a number.
+    Usage: number [numerical value]. Example: number 13';
+  }
+  const number = await getNumber(number);
+  return number;
+};
+
+export const datehis = async (args: string[]): Promise<string> => {
+  const datehistory = args.join(' ');
+  if (!datehistory) {
+    return 'Get random trivia about a date.
+    Usage: datehis [MONTH/DAY]. Example: datehis 8/22';
+  }
+  const datehistory = await getWeather(datehistory);
+  return datehistory;
 };
 
 export const figgy = async (args: string[]): Promise<string> => {

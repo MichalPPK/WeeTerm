@@ -38,7 +38,7 @@ export const getFiglet = async (phrase: string) => {
 
 export const getNumber = async (number: string) => {
   try {
-    const { data } = await axios.get(`http://numbersapi.com/${number}`,{transport: httpFollow});
+    const { data } = await axios.get(`http://numbersapi.com/${number}`,{insecureHTTPParser: true});
     return data;
   } catch (error) {
     return error;

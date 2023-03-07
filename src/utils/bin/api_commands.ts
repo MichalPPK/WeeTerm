@@ -65,7 +65,7 @@ export const datehis = async (args: string[]): Promise<string> => {
 export const figlet = async (args: string[]): Promise<string> => {
   const phrase = args.join('+');
   if (!phrase) {
-    return 'Usage: figlet [phrase]. Example: figgy Hello World';
+    return 'Usage: figlet [phrase]. Example: figlet Hello World';
   }
   const figlet = await getFiglet(phrase);
   return figlet;

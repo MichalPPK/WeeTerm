@@ -62,11 +62,11 @@ export const datehis = async (args: string[]): Promise<string> => {
   return datehis;
 };
 
-export const figgy = async (args: string[]): Promise<string> => {
+export const figlet = async (args: string[]): Promise<string> => {
   const phrase = args.join('+');
   if (!phrase) {
-    return 'Usage: figgy [phrase]. Example: figgy Hello World';
+    return 'Usage: figlet [phrase]. Example: figgy Hello World';
   }
-  const figgy = await getFiglet(phrase);
-  return figgy;
+  const figlet = await getFiglet(phrase);
+  return figlet;
 };
